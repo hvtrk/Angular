@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 /***************Mongodb configuratrion********************/
 var mongoose = require('mongoose');
-var configDB = require('./config/database.js');
+var configDB = require('./config/database.js.js');
 //configuration ===============================================================
 mongoose.connect(configDB.url,{ useNewUrlParser: true,  useUnifiedTopology: true }); // connect to our database
 
@@ -59,7 +59,7 @@ app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
-require('./config/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./config/routes.js.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
 
 //launch ======================================================================
