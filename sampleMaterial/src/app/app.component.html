@@ -1,9 +1,22 @@
-<!-- <router-outlet></router-outlet> -->
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Third Line</span>
+<mat-toolbar color="primary" class="nav-bar">
+  <mat-toolbar-row class="nav-row">
+    <ng-container>
+      Rahul Kumar
+    </ng-container>
+    <span class="example-spacer"></span>
+    <!-- Home -->
+    <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
+    <!-- About us -->
+    <mat-icon aria-hidden="false" aria-label="account_circle icon">account_circle</mat-icon>
+    <!-- Contact us -->
+    <mat-icon aria-hidden="false" aria-label="question_answer icon">question_answer</mat-icon>
+    <!-- Locate us -->
+    <mat-icon aria-hidden="false" aria-label="room icon">room</mat-icon>
+    <!-- Work details -->
+    <mat-icon aria-hidden="false" aria-label="work icon">work</mat-icon>
     <span class="example-spacer"></span>
     <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
     <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
+<router-outlet></router-outlet>
