@@ -1,22 +1,53 @@
 <mat-toolbar color="primary" class="nav-bar">
   <mat-toolbar-row class="nav-row">
-    <ng-container>
+    <div class="title">
       Rahul Kumar
-    </ng-container>
-    <span class="example-spacer"></span>
-    <!-- Home -->
-    <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
-    <!-- About us -->
-    <mat-icon aria-hidden="false" aria-label="account_circle icon">account_circle</mat-icon>
-    <!-- Contact us -->
-    <mat-icon aria-hidden="false" aria-label="question_answer icon">question_answer</mat-icon>
-    <!-- Locate us -->
-    <mat-icon aria-hidden="false" aria-label="room icon">room</mat-icon>
-    <!-- Work details -->
-    <mat-icon aria-hidden="false" aria-label="work icon">work</mat-icon>
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
-    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+    </div>
+    <div class="menu">
+      <div class="menu-bar">
+        <!-- <span class="example-spacer"></span> -->
+        <!-- Home -->
+        <div class="menu-icon1">
+          <mat-icon class="icon1" aria-hidden="false" aria-label="home icon">home</mat-icon>
+          <span class="name1">
+            Home
+          </span>
+        </div>
+
+        <!-- About us -->
+        <div class="menu-icon2">
+          <mat-icon class="icon2" aria-hidden="false" aria-label="account_circle icon">account_circle</mat-icon>
+          <span class="name2">
+            About
+          </span>
+        </div>
+
+        <!-- Contact us -->
+        <div class="menu-icon3">
+          <mat-icon class="icon3" aria-hidden="false" aria-label="question_answer icon">question_answer</mat-icon>
+          <span class="name3">
+            Contact
+          </span>
+        </div>
+
+        <!-- Locate us -->
+        <div class="menu-icon4">
+          <mat-icon class="icon4" aria-hidden="false" aria-label="room icon">room</mat-icon>
+          <span class="name4">
+            Locate
+          </span>
+        </div>
+
+        <!-- Work details -->
+        <div class="menu-icon5">
+          <mat-icon class="icon5" aria-hidden="false" aria-label="work icon">work</mat-icon>
+          <span class="name5">
+            Work
+          </span>
+        </div>
+      </div>
+      <!-- <span class="example-spacer"></span> -->
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>

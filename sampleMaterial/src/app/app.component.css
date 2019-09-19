@@ -1,16 +1,204 @@
+/* main {
+  background-color: blueviolet;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+} */
 
-main {
-    background-color: blueviolet;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
+/* .example-spacer {
+  flex: 1 1 auto;
+} */
+
+.nav-bar {
+  background-color: #34495e;
+  display: grid;
+  grid-template-columns: 100% ;
+  grid-template-rows: 100%;
+  grid-template-areas: "nav-row";
 }
 
-.example-icon {
-    padding: 0 14px;
-  }
-  
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-  
+.mat-toolbar {
+  height: 7rem !important;
+}
+.mat-toolbar-row {
+  height: 7rem !important;
+}
+
+
+.nav-row {
+  display: grid;
+  grid-template-columns: 20% 60% 20% ;
+  grid-template-rows: 100%;
+  grid-template-areas: "title menu .";
+  grid-area: nav-row;
+  font-size: xx-large;
+}
+
+.title {
+  grid-area: title;
+  margin: 0 auto;
+}
+
+mat-icon {
+  margin: 0 auto !important;
+  font-size: 50px !important;
+  height: 100% !important;
+  width: 3.5rem !important;
+  position: initial
+}
+
+/* Internal Menu icon and the icon name */
+.menu {
+  grid-area: menu;
+  margin: 0 15%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "menu-bar";
+}
+
+.menu-bar {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  grid-template-areas: "menu-icon1 menu-icon2 menu-icon3 menu-icon4 menu-icon5";
+  grid-area: menu-bar;
+  margin: 1rem 0 0 ;
+}
+
+/* Home icon ==> Start */
+.menu-icon1 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "icon" "name";
+  grid-area: menu-icon1;
+}
+.name1 {
+  grid-area: name;
+  visibility: hidden;
+}
+.icon1 {
+  grid-area: icon;
+}
+.menu-icon1:hover{
+  cursor: pointer;
+}
+.menu-icon1:hover .name1{
+  visibility: visible;
+}
+.menu-icon1:hover .icon1 {
+  height: 50% ;
+  font-size: 40px !important;
+}
+/* Home icon ==> End */
+
+
+/* About Icon ==> Start */
+.menu-icon2 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "icon" "name";
+  grid-area: menu-icon2;
+}
+.name2 {
+  grid-area: name;
+  visibility: hidden;
+}
+.menu-icon2:hover .name2 {
+  visibility: visible;
+}
+.icon2 {
+  grid-area: icon;
+}
+.menu-icon2:hover .icon2 {
+  height: 50% ;
+  font-size: 40px !important;
+}
+/* About Icon ==> End */
+
+
+/* Contact us icon ==> Start */
+.menu-icon3 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "icon" "name";
+  grid-area: menu-icon3;
+}
+.name3 {
+  grid-area: name;
+  visibility: hidden;
+}
+.menu-icon3:hover  .name3{
+  visibility: visible;
+}
+.icon3 {
+  grid-area: icon;
+}
+.menu-icon3:hover .icon3 {
+  height: 50% ;
+  font-size: 40px !important;
+}
+/* Contact us icon ==> End */
+
+
+/* Locate us icon ==> Start */
+.menu-icon4 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "icon" "name";
+  grid-area: menu-icon4;
+}
+.name4 {
+  grid-area: name;
+  visibility: hidden;
+}
+.menu-icon4:hover  .name4{
+  visibility: visible;
+}
+.icon4 {
+  grid-area: icon;
+}
+.menu-icon4:hover .icon4 {
+  height: 50% ;
+  font-size: 40px !important;
+}
+/* Locate us icon ==> End */
+
+
+/* Work icon ==> Start */
+.menu-icon5 {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "icon" "name";
+  grid-area: menu-icon5;
+}
+.name5 {
+  grid-area: name;
+  visibility: hidden;
+}
+.menu-icon5:hover .name5{
+  visibility: visible;
+}
+.icon5 {
+  grid-area: icon;
+}
+.menu-icon5:hover .icon5 {
+  height: 50% ;
+  font-size: 40px !important;
+}
+/* Work icon ==> End */
